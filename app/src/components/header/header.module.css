@@ -1,0 +1,62 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.searchSection {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.searchInput {
+    border: none;
+    outline: none;
+    padding: 5px;
+    margin-left: 10px;
+    width: 200px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.iconButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.divider {
+    width: 2px;
+    height: 30px;
+    background-color: #ccc;
+    margin: 0 20px;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profileImage {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.profileDropdown {
+    border: none;
+    padding: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+}

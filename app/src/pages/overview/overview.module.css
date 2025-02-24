@@ -1,0 +1,87 @@
+/* General Styling */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 15px;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  /* Header Cards (4 cards in a row) */
+  .card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .card:nth-child(-n+4) {
+    grid-column: span 3; /* Each card spans 3 columns */
+  }
+  
+  .value {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .positive {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .negative {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Charts */
+  .chart {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Revenue Chart (Larger) */
+  .revenue {
+    grid-column: span 8;
+    height: 200px;
+  }
+  
+  /* Session by Country (Smaller) */
+  .country {
+    grid-column: span 4;
+    height: 200px;
+  }
+  
+  /* Bottom Charts */
+  .region,
+  .ecommerce,
+  .users {
+    grid-column: span 4;
+    height: 160px;
+  }
+  
+  /* Chart Content Placeholder */
+  .chartContent {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .card {
+      grid-column: span 6;
+    }
+    .revenue, .country, .region, .ecommerce, .users {
+      grid-column: span 12;
+    }
+  }
+  
