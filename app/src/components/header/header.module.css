@@ -2,38 +2,49 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f8f9fa;
+    /* background-color: #f8f9fa; */
     padding: 10px 20px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ccc;
 }
 
 .searchSection {
     display: flex;
     align-items: center;
-    background: #fff;
     padding: 5px 10px;
     border-radius: 5px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    gap: 5px;
 }
 
 .searchInput {
     border: none;
     outline: none;
     padding: 5px;
-    margin-left: 10px;
-    width: 200px;
+    width: 100%;
+    background-color: transparent;
+    height: 100%;
+    font-weight: 500;
+    font-size: 14px;
 }
 
 .actions {
     display: flex;
     align-items: center;
+    gap:2px;
 }
 
 .iconButton {
     background: none;
     border: none;
     cursor: pointer;
-    margin-left: 15px;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.iconButton:hover {
+    background-color: #abff89;
 }
 
 .divider {
@@ -46,17 +57,64 @@
 .profile {
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .profileImage {
     border-radius: 50%;
-    margin-right: 10px;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.profileIcon {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.downArrow {
+    margin-left: 2px;
+    font-size: 14px;
 }
 
 .profileDropdown {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    display: none; /* Hide by default */
+    flex-direction: column;
+    min-width: 120px;
+    z-index: 10;
+}
+
+.profileDropdown button {
+    background: none;
     border: none;
-    padding: 5px;
-    background-color: #fff;
+    padding: 10px;
+    text-align: left;
+    width: 100%;
     cursor: pointer;
-    font-size: 14px;
+}
+
+.profileDropdown button:hover {
+    background-color: #f5f5f5;
+}
+
+.profile:hover .profileDropdown {
+    display: flex;
+}
+
+.profileDropdown:hover {
+    display: flex;
 }

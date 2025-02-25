@@ -1,12 +1,32 @@
 .sidebar {
-    width: 250px;
+    width: 240px;
     height: 100vh;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); */
+    border: 1px solid #c7c7c7;
+    transition: transform 0.3s ease-in-out;
+}
+
+.sidebartop{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    color: #6c757d;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.show {
+    transform: translateX(0);
+}
+
+.hide {
+    transform: translateX(-100%);
 }
 
 .titlediv {
@@ -14,6 +34,11 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px;
+    padding: 5px 0;
+}
+
+.titledivleft{
+    display: flex;
 }
 
 .title {
@@ -27,14 +52,21 @@
     background: none;
     border: none;
     cursor: pointer;
+    padding: 2px;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.menuButton:hover {
+    background-color: #1eff0030;
 }
 
 .menutitle {
     font-size: 14px;
     font-weight: bold;
-    color: #6c757d;
-    margin-bottom: 10px;
+    color: #52585e;
     text-transform: uppercase;
+    padding: 10px;
 }
 
 .menuitems {
@@ -52,7 +84,7 @@
 }
 
 .menuItem:hover {
-    background-color: #e2e6ea;
+    background-color: #1eff0030;
 }
 
 .menuItem img {
@@ -60,30 +92,37 @@
 }
 
 .divider {
-    margin: 15px 0;
+    margin: 10px 0;
     border: none;
     height: 1px;
     background-color: #ddd;
 }
 
 .footer {
-    background-color: #e9ecef;
     padding: 15px;
-    border-radius: 8px;
-    text-align: center;
+    border-radius: 20px;
+    height: 24vh;
+    text-align: left;
+    color: #fff;
+    background-color: #004600;
+}
+
+.footerP{
 }
 
 .upgradeButton {
-    background-color: #28a745;
-    color: white;
+    background-color: white;
+    color: #218838;
     padding: 8px 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
     font-weight: bold;
+    transition: 0.3s ease;
 }
 
 .upgradeButton:hover {
     background-color: #218838;
+    color: white;
 }
