@@ -83,7 +83,24 @@
     transition: background 0.3s ease;
 }
 
+.menuItem:first-child {
+    background-color: #1eff0058;
+}
+
 .menuItem:hover {
+    background-color: #1eff0030;
+}
+
+.menuItem2 {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.menuItem2:hover {
     background-color: #1eff0030;
 }
 

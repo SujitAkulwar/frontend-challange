@@ -12,6 +12,7 @@
   padding: 10px 20px;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
+  height: 60px;
 }
 
 .title h1 {
@@ -40,13 +41,15 @@
   background-color: #00ff003c;
 }
 
-.dashboard {
+  .dashboard {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 15px;
     padding: 20px;
     background-color: #fafafa;
     overflow-y: auto;
+    max-height: calc(100vh - 120px);
+    
   }
   
   .card {
@@ -186,7 +189,7 @@
 
   .country {
     grid-column: span 4;
-    aspect-ratio: 1/0.8;
+    aspect-ratio: 1/0.7;
   }
   
   .region,

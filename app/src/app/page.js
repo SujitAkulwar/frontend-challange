@@ -6,7 +6,7 @@ import Overview from "@/pages/overview/overview";
 export default function Home() {
   return (
     <div className={styles.page}>
-      <Sidebar />
+      <Sidebar />      
       <Overview />
     </div>
   );

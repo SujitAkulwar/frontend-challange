@@ -65,7 +65,7 @@ const Sidebar = () => {
 
                     <div className={styles.menuitems}>
                         {otherMenuItems.map((item, index) => (
-                            <div key={index} className={styles.menuItem}>
+                            <div key={index} className={styles.menuItem2}>
                                 <Image src={item.icon} alt={item.name} width={18} height={18} />
                                 <span>{item.name}</span>
                             </div>
