@@ -186,7 +186,7 @@
 
   .country {
     grid-column: span 4;
-    /* aspect-ratio: 1/0.8; */
+    aspect-ratio: 1/0.8;
   }
   
   .region,
