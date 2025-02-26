@@ -6,7 +6,7 @@
 
 .title {
   display: flex;
-  justify-content: space-between; /* Space between title & buttons */
+  justify-content: space-between; 
   align-items: center;
   width: 100%;
   padding: 10px 20px;
@@ -23,7 +23,7 @@
 
 .titlebuttons {
   display: flex;
-  gap: 10px; /* Space between buttons */
+  gap: 10px; 
 }
 
 .titlebuttons button {
@@ -45,7 +45,7 @@
     grid-template-columns: repeat(12, 1fr);
     gap: 15px;
     padding: 20px;
-    background-color: #f5f5f5;
+    background-color: #fafafa;
     overflow-y: auto;
   }
   
@@ -92,7 +92,7 @@
   .negative {
     color: red;
     border-radius: 5px;
-    background-color: rgba(255, 0, 0, 0.292);
+    background-color: #ff191940;
     font-weight: bold;
     padding: 2px 5px;
   }
@@ -108,22 +108,92 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+    /* align-items: center; */
+    /* justify-content: center; */
   }
-  
+
+  .charttitle{
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .chartsubtitle{
+    font-size: 14px;
+    color: #999999;
+    padding: 5px 0;
+  }
+
   .revenue {
+    display: flex;
     grid-column: span 8;
+    width: 100%;
+    max-width: 100%;
+    padding: 16px;
+    box-sizing: border-box;
   }
   
+  .revenuedata{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    gap: 10px;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  
+  .revenuetext{
+    font-size: 14px;
+    color: #999999;
+    padding: 2px 0;
+    display: flex;
+    gap: 7px;
+  }
+  
+  .revenueitemtitlelogo{
+    font-size: 10px;
+  }
+
+  .revenueitem{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .revenueitemtitle{
+    font-weight: 500;
+  }
+
+  .revenueitembottom{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    line-height: 20px;
+  }
+
+  .revenueitemvalue{
+    font-weight: 700;
+    color: black;
+    font-size: 1.2rem;
+  }
+  .revenueitemdot{
+    font-size: 40px;
+    font-weight: 600;
+    color: #999999;
+  }
+  
+
   .country {
     grid-column: span 4;
+    /* aspect-ratio: 1/0.8; */
   }
   
   .region,
   .ecommerce,
   .users {
     grid-column: span 4;
+    /* aspect-ratio: 1/0.85; */
   }
   
   .chartContent {
@@ -131,7 +201,78 @@
     font-weight: bold;
     color: #666;
   }
+
+  .bargraph{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+  }
   
+  .chartRow {
+    display: flex;
+    /* align-items: center; */
+    gap: 10px;
+  }
+  
+  .chartInfo {
+    flex-grow: 1;
+  }
+  
+  .countryName {
+    font-weight: 500;
+    font-size: 12px;
+    color: gray;
+  }
+  
+  .sessionCount,
+  .percentage {
+    margin-left: 8px;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  
+  .progressBar {
+    height: 8px;
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 3px;
+    margin-top: 4px;
+    position: relative;
+  }
+  
+  .progressFill {
+    height: 100%;
+    background: #07874e;
+    border-radius: 3px;
+  }
+ .responsive-chart {
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+  }
+  .chartInfoTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .regionchart{
+    transform: rotateX(30deg);
+  }
+
+  .planDetails{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .planDetailsitem{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
   @media (max-width: 1024px) {
     /* .card {
       grid-column: span 6;
@@ -144,3 +285,6 @@
     }
   }
   
+
+ 
+ 

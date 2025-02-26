@@ -17,9 +17,15 @@ import performance_img from '../images/sidebar/performance.svg';
 import products_img from '../images/sidebar/products.svg';
 import sales_img from '../images/sidebar/sales.svg';
 
+import australia_flag_img from '../images/overview/flags/australia.svg';
+import germany_flag_img from '../images/overview/flags/germany.svg';
+import indonesia_flag_img from '../images/overview/flags/indonesia.svg';
+import thailand_flag_img from '../images/overview/flags/thailand.svg';
+
 const images = { 
     headerimages : {search_img, download_img, rocket_img, settings_img, profile_img} ,
-    sidebarimages : {logo_img, campaigns_img, feedback_img, demo_img, menu_img, help_img, message_img, orders_img, overview_img, products_img, performance_img, sales_img}
+    sidebarimages : {logo_img, campaigns_img, feedback_img, demo_img, menu_img, help_img, message_img, orders_img, overview_img, products_img, performance_img, sales_img},
+    overviewflagimages : {australia_flag_img, germany_flag_img, indonesia_flag_img, thailand_flag_img}
 };
 
 export default images;

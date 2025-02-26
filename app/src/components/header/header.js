@@ -9,7 +9,7 @@ const Header = () => {
         <div className={styles.header}>
             <div className={styles.searchSection}>
                 <Image src={images.headerimages.search_img} alt="Search" width={20} height={20} />
-                <input type="text" placeholder="Search..." className={styles.searchInput} />
+                <input type="text" placeholder="Search anything here..." className={styles.searchInput} />
             </div>
 
             <div className={styles.actions}>
